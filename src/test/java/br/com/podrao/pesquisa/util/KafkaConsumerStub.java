@@ -15,12 +15,12 @@ import lombok.SneakyThrows;
 
 @Primary
 @Component
-public class KafkaConsumeStub extends KafkaConsumer {
+public class KafkaConsumerStub extends KafkaConsumer {
 
 	@Getter
 	private CountDownLatch latch = new CountDownLatch(1);
 	
-	public KafkaConsumeStub(CadastrarCarrinho cadastrarCarrinho, CadastrarLanche cadastrarLanche) {
+	public KafkaConsumerStub(CadastrarCarrinho cadastrarCarrinho, CadastrarLanche cadastrarLanche) {
 		super(cadastrarCarrinho, cadastrarLanche);
 	}
 	

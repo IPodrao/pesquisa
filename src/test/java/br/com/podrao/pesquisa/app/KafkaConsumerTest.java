@@ -25,7 +25,7 @@ import br.com.podrao.pesquisa.core.models.commands.CadastrarLancheCommand;
 import br.com.podrao.pesquisa.core.ports.incoming.CadastrarCarrinho;
 import br.com.podrao.pesquisa.core.ports.incoming.CadastrarLanche;
 import br.com.podrao.pesquisa.util.CarrinhoDtoStub;
-import br.com.podrao.pesquisa.util.KafkaConsumeStub;
+import br.com.podrao.pesquisa.util.KafkaConsumerStub;
 import br.com.podrao.pesquisa.util.KafkaProducer;
 import br.com.podrao.pesquisa.util.LancheDtoStub;
 import lombok.SneakyThrows;
@@ -36,7 +36,7 @@ import lombok.SneakyThrows;
 class KafkaConsumerTest {
 
 	@Autowired
-	private KafkaConsumeStub consumer;
+	private KafkaConsumerStub consumer;
 
 	@Autowired
 	private KafkaProducer producer;
